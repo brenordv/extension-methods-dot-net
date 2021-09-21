@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>raccoon.ninja.common.extension.methods</PackageId>
+        <Title>Common Extension Methods</Title>
+        <Authors>Raccoon Ninja</Authors>
+        <Copyright>Raccoon Ninja</Copyright>
+        <PackageProjectUrl>https://raccoon.ninja</PackageProjectUrl>
+        <PackageTags>core3.1, helpers, validation, extension</PackageTags>
+        <Description>Simple package with a collection of common extension methods.</Description>
+        <RepositoryUrl>https://github.com/brenordv/extension-methods-dot-net</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Internationalization\ErrorMessages.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Internationalization\ErrorMessages.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ErrorMessages.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Vsxmd" Version="1.4.5">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+    
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DebugType>Portable</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\MIT-LICENSE.txt" Pack="true" PackagePath="MIT-LICENSE.txt" />
+    </ItemGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DocumentationFile>bin\Debug\ExtensionMethods.Documentation.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DocumentationFile>bin\Release\ExtensionMethods.Documentation.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <DocumentationMarkdown>$(MSBuildProjectDirectory)\..\ExtensionMethods.Documentation.md</DocumentationMarkdown>
+    </PropertyGroup>
+</Project>
