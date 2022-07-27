@@ -7,13 +7,16 @@
         <Authors>Raccoon Ninja</Authors>
         <Copyright>Raccoon Ninja</Copyright>
         <PackageProjectUrl>https://raccoon.ninja</PackageProjectUrl>
-        <PackageTags>core3.1, helpers, validation, extension</PackageTags>
+        <PackageTags>netstandard2.0, helpers, utils, extension</PackageTags>
         <Description>Simple package with a collection of common extension methods.</Description>
         <RepositoryUrl>https://github.com/brenordv/extension-methods-dot-net</RepositoryUrl>
-        <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+        <PackageReleaseNotes>Changed target framework from netcoreapp3.1  to netstandard2.0 for compatibility purposes.</PackageReleaseNotes>
         <PackageLicenseFile>MIT-LICENSE.txt</PackageLicenseFile>
         <LangVersion>7.3</LangVersion>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageVersion>2.0.0</PackageVersion>
+        <AssemblyVersion>2.0.0</AssemblyVersion>
+        <FileVersion>2.0.0</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
