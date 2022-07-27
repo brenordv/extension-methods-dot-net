@@ -1,3 +1,15 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=bugs)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=coverage)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=brenordv_extension-methods-dot-net&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=brenordv_extension-methods-dot-net)
+
 # Common Extension Methods
 
 This is a stand-alone project that consists in a collection of extension methods. I usually carry them over to every other project I work on, so I figured: why not make it a public package?
