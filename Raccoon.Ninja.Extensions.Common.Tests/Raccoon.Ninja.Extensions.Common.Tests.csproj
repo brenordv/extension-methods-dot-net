@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-
         <IsPackable>false</IsPackable>
+        <DebugType>Full</DebugType>
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,5 +22,11 @@
     <ItemGroup>
       <ProjectReference Include="..\Raccoon.Ninja.Extensions.Common\Raccoon.Ninja.Extensions.Common.csproj" />
     </ItemGroup>
-
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DebugType>Portable</DebugType>
+    </PropertyGroup>
+    <PropertyGroup>
+        <!-- Exclude the project from analysis -->
+        <SonarQubeExclude>true</SonarQubeExclude>
+    </PropertyGroup>    
 </Project>
